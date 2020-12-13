@@ -1,0 +1,16 @@
+textarea {
+    min-height: 400px;
+}
+
+
+.email-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 800px;
+        flex-wrap: wrap;
+
+        border: 1px solid gray;
+        padding: 10px;
+        border-radius: 10px;
+}
