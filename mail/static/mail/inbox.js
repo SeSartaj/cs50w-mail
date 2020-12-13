@@ -163,7 +163,8 @@ function archive(id) {
       archived: true
     })
   })
-  .then(load_mailbox('inbox'));
+  // Wait 100 ms before reloading the mailbox
+  .then(setTimeout(function () { (load_mailbox('inbox')) }, 100));
 }
 
 function un_archive(id) {
@@ -173,7 +174,8 @@ function un_archive(id) {
       archived: false
     })
   })
-    .then(load_mailbox('archive'));
+  // Wait 100 ms before reloading the mailbox
+  .then(setTimeout(function () { (load_mailbox('archive')) }, 100));
 }
 
 
